@@ -1,0 +1,4 @@
+baseurl = "http://bank15.nl"
+languageCode = "nl"
+title = "Bank15"
+author = "Steven van den Hout"

@@ -1,0 +1,26 @@
+<header class="li-page-header">
+    <div class="container">
+        <div class="row">
+            <div class="sixteen columns">
+                <div class="li-brand li-left">
+                <a href="{{ .Site.BaseURL }}"><img src="/img/logo.png" /></a></div>
+                <div class="li-menu li-right">
+                    <ul id="menu2" class="li-menu-items">
+                        {{ range .Site.Menus.main }}
+                            <a href="{{.URL}}"><li> {{ .Name }} </li></a>
+                        {{end}}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="sixteen columns">
+                <ul id="menu" class="li-menu-items li-menu-mobile">
+                    {{ range .Site.Menus.main }}
+                        <a href="{{.URL}}"><li> {{ .Name }} </li></a>
+                    {{end}}
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>

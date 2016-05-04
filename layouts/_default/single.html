@@ -1,0 +1,60 @@
+{{ partial "head.html" . }}
+{{ partial "header.html" . }}
+{{ $baseurl := .Site.BaseURL }}
+{{ $categories := .Params.categories }}
+{{ $tags := .Params.tags }}
+
+    <div class="container">
+        <div class="row">
+            <div class="sixteen columns">
+                <article class="li-article">
+                    <section>
+                      <img class="bank-15-logo" src="img/bank-15-logo.png" width="200" />
+                      <div class="clear"></div>
+                    </section>
+                    <section>
+                        {{ .Content }}
+                    </section>
+                    <section class="spacer"></section>
+
+                    <section>
+                        {{ if eq .Title "Werk"}}
+                            {{ partial "vimeo.html"}}
+                        {{ end}}
+                    </section>
+                    <section style="margin-bottom:20px;">
+                      E-mail: <a href="mailto:info@bank15.nl"> info@bank15.nl </a>
+                      </br>
+                      Telefoon: <a href="tel:+31625046381"> +31 6 25046381 </a>
+                    </section>
+                    <section>
+                      <iframe
+                        style="margin: 0 auto;"
+                        width="100%"
+                        height="400px"
+                        frameborder="0" style="border:0"
+                        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAnMENJ4aJ3qw1Ya06eB0RbAwz46Q3taFE&q=bank15,tilburg&zoom=16&attribution_web_url=http://bank15.nl&attribution_source=http://tafel15.nl"
+                      >
+                      </iframe>
+                    </section>
+                    <section class="spacer"></section>
+                    <section>
+                      <div class="social">
+                        <!-- facebook -->
+                        <div class="fb-like" data-colorscheme="dark" data-href="http://bank15.nl" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
+                        <!-- twitter -->
+                        <a href="https://twitter.com/share" class="twitter-share-button" data-via="bank15">Tweet</a>
+                        <!-- instagram -->
+                        <span class="ig-follow" data-id="5479dee" data-handle="bank15" data-count="false" data-size="small" data-username="false"></span>
+                        <script>(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src="//x.instagramfollowbutton.com/follow.js";s.parentNode.insertBefore(g,s);}(document,"script"));</script>
+                        <!-- linkedin -->
+                        <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+                        <script type="IN/FollowCompany" data-id="9263963"></script>
+                        <!-- pinterest -->
+                      </div>
+                    </section>
+                </article>
+            </div>
+        </div>
+    </div>
+{{ partial "tail.html" . }}
