@@ -5,8 +5,7 @@
 
 body {
     font-family: "Oswald", "Helvetica Neue", "Helvetica", sans-serif;
-    color: #000000;
-    background-size: cover;
+    color: #FFF;
     background-image: url('/img/patroon2.png');
 }
 
@@ -20,7 +19,6 @@ article {
 }
 
 .container {
-    background-color: #FFF;
     height: 100%;
 }
 
@@ -40,7 +38,7 @@ a,
 a:active,
 a:hover,
 a:visited {
-    color: #202020;
+    color: #B4D91B;
     text-decoration: none;
     font-weight: bold;
 }
@@ -86,7 +84,7 @@ h4 {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #202020;
+    color: #FFF;
     font-weight: 100;
 }
 
